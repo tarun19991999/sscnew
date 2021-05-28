@@ -69,11 +69,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    Toast.makeText(MainActivity.this,"Login Successfully",Toast.LENGTH_LONG).show();
-                    Intent intent=new Intent(MainActivity.this,DashboardActivity.class);
-                    startActivity(intent);
-                    finish();
-                }
+                    if (email.equals("emp000@gmail.com")) {
+                        Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(MainActivity.this, DashboardActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+
+                    else {
+                        Toast.makeText(MainActivity.this, "Sign In fail", Toast.LENGTH_LONG).show();
+                    }}
+
                 else{
                     Toast.makeText(MainActivity.this,"Sign In fail!",Toast.LENGTH_LONG).show();
                 }

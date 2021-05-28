@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.firebase.auth.FirebaseAuth;
-import com.my.authentication3.R;
 
 public class DashboardActivity extends Activity {
     private Button logout;

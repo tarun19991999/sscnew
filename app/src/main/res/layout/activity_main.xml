@@ -13,7 +13,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sign In"
+        android:text="EMP SIGN IN"
         android:textColor="#ffffff"
         android:textStyle="bold"
         android:textSize="40dp" />
@@ -25,7 +25,7 @@
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:hint="Enter your email..."
+            android:hint="Enter employee email..."
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="textEmailAddress"
@@ -47,7 +47,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:hint="Enter your password..."
+            android:hint="Enter employee password..."
             android:paddingVertical="15dp"
             android:textColor="#000000"
             android:inputType="textPassword"
